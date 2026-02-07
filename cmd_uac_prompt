@@ -1,0 +1,31 @@
+@echo off
+net session
+cls
+if %errorlevel% == 0 goto ok
+:uacprmp
+cls
+echo requesting administrator rights...
+echo press yes if prompted!
+@powershell -Command "Start-Process -Verb RunAs -FilePath '%0'" 1>nul 2>nul
+cls
+if %errorlevel% neq 0 goto err
+goto exit
+
+:err
+cls
+echo error!: failed to get the administrator rights!
+echo please make sure to press yes if prompted, try again or start this application as administrator manually!
+echo do you want to try again?
+choice
+if %errorlevel% == 1 goto uacprmp
+goto exit
+
+:exit
+exit
+
+:ok
+cls
+echo successful!
+echo press any key to exit
+pause
+goto exit

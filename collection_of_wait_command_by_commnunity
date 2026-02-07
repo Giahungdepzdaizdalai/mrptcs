@@ -1,0 +1,51 @@
+@echo off
+cls
+echo collection of wait method found by community
+echo every method will wait for 5 seconds
+echo press any key to begin
+pause 1>nul 2>nul
+::timeout command(can be aborded by user)
+cls
+echo method: timeout command(can be aborted by user)(press a or any key to abort)
+echo start time: %time%
+timeout /t 5 1>nul 2>nul
+echo end time: %time%
+echo press any key to continue
+pause 1>nul 2>nul
+:: ping (using n times) test
+cls
+echo method: ping n times
+echo start time: %time%
+ping localhost -n 6 > nul
+echo end time: %time%
+echo press any key to continue
+pause 1>nul 2>nul
+:: powershell sleep test
+cls
+echo method: powershell sleep
+echo start time: %time%
+@powershell -command "Start-Sleep -s 5"
+echo end time: %time%
+echo press any key to continue
+pause 1>nul 2>nul
+:: waitfor test
+cls
+echo method: waitfor test
+echo start time: %time%
+waitfor /t 5 pause 2>nul
+echo end time: %time%
+echo press any key to continue
+pause 1>nul 2>nul
+:: ping (using wait) test (not recommended because it won't work if the network is unavailable)
+cls
+echo method: ping wait(not recommended because it won't work if the network is unavailable)
+echo start time: %time%
+ping 192.192.192.192 -n 1 -w 5000 > nul
+echo end time: %time%
+echo press any key to continue
+pause 1>nul 2>nul
+cls
+echo -the end-
+echo press any key to exit
+pause 1>nul 2>nul
+exit

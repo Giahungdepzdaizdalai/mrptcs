@@ -1,1 +1,1 @@
-this is my repository that contains some stuffs.
+Hello! Welcome to my repo, this repo contain some software, and sauces perhaps.

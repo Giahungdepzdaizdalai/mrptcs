@@ -1,16 +1,16 @@
 @echo off
-:: Configurable setting that will be applied permanently!
+:: This section contains configurable settings that will be applied permanently!
 :: It's strongly recommended to not change any value you don't know!
 :: You should ignore it if you don't know what are you doing!
 :: Leave blank for default configuration.
 :: Don't include executable in PATH!
 :: Your yt-dlp executable must be named yt-dlp.exe!
-:: Your ffmpeg file should also named ffmpeg.exe to prevent checking failure.
+:: Your ffmpeg file should also be named ffmpeg.exe to prevent checking failure.
 :: Or you can set override_ffmpeg_check to 1 to skip ffmpeg checking(not recommended)
 :: NOTE!: override_ffmpeg_check is only applied to PATH configuration setting! If the value is set to 1, you must specify the ffmpeg file in the PATH configuration because...
-:: the program won't automatically detect and load ffmpeg since it can't tell if ffmpeg really exists because the check is skipped.
+:: The program won't automatically detect and load ffmpeg since it can't tell if ffmpeg really exists because the check is skipped.
 :: This configuration will only be used if the program failed to detect and/or load the executable.
-:: The path don't need to be warped in quotation mark because it's atomatically handled.
+:: The path doesn't need to be wraped in quotation marks because it's automatically handled.
 set ydurl=
 set ytdp=
 set ffmPath=C:\Users\giahu\Downloads\Compressed\ffmpeg-master-latest-win64-gpl\bin
@@ -631,4 +631,5 @@ exit
 exit
 :# The following line must be last and not end by a CRLF.
 -
+
 

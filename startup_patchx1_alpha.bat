@@ -11,6 +11,7 @@
 :: The program won't automatically detect and load ffmpeg since it can't tell if ffmpeg really exists because the check is skipped.
 :: This configuration will only be used if the program failed to detect and/or load the executable.
 :: The path doesn't need to be wraped in quotation marks because it's automatically handled.
+:: Ytdlp now require a javascript runtime to work properly, so installation of a javascript runtime such as deno is required.
 set ydurl=
 set ytdp=
 set ffmPath=C:\Users\giahu\Downloads\Compressed\ffmpeg-master-latest-win64-gpl\bin

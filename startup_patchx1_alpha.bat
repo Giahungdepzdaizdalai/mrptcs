@@ -18,6 +18,8 @@ set ffmPath=C:\Users\giahu\Downloads\Compressed\ffmpeg-master-latest-win64-gpl\b
 set ytdlPath=
 set override_ffmpeg_check=0
 
+::spaghetti code ahead
+
 @echo off
 setlocal
 setlocal enabledelayedexpansion

@@ -443,12 +443,6 @@ call :timeam 1
 echo.
 echo -^>
 pause 1>nul 2>nul
-cls
-echo ....Do you want to see information about ffmpeg and note from me?
-pause 1>nul 2>nul
-echo No option for you then...
-echo I will show it btw..
-pause 1>nul 2>nul
 goto ffmpeg1
 exit
 

@@ -13,6 +13,7 @@
 :: The path doesn't need to be wraped in quotation marks because it's automatically handled.
 :: Ytdlp now require a javascript runtime to work properly, so installation of a javascript runtime such as deno is required.
 :: The Deno auto install is currently a work in progress
+:: It is also recommended to use nightly builds as it provide faster update
 set ydurl=
 set ytdp=
 set ffmPath=C:\Users\giahu\Downloads\Compressed\ffmpeg-master-latest-win64-gpl\bin

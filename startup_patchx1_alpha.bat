@@ -120,6 +120,7 @@ exit
 cls
 title yt-dlp (setup)
 echo Downloading... Please wait^^!
+::https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/latest/download/yt-dlp.exe  migration planned
 if "%ydurl%" == "" (set ydurl=https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe&set defaultyd=1)
 if "%ytdp%" == "" (set ytdp=%~dp0\yt-dlp.exe&set defaultpt=1)
 bitsadmin /transfer "ytdlpdownloader%random%" /download /priority FOREGROUND "%ydurl%" "%ytdp%"
